@@ -1,0 +1,31 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "main": "server.js",
+  "description": "crud básico em node",
+  "private": true,
+  "scripts": {
+    "test": "mocha --timeout 100000",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.6.0",
+    "chai-http": "^4.3.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "line-reader": "^0.4.0",
+    "mongodb": "^3.1.7",
+    "request": "^2.88.2",
+    "should": "^1.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "nodemon": "^1.18.4"
+  },  
+  "keywords": []
+}

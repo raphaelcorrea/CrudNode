@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD NodeJS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body class="table table-dark container">
+
+<h2>Editar Registro</h2>
+  <% data.forEach(function(details) { %>
+
+    <div class="form-group container">
+
+      <form action="/edit/<%= details.id %>" method="POST" class="form-group row col-form-label">
+      <div class="row col-xs-3 col-xs-offset-9">
+        
+          <input type="text" value="<%= details.placa %>" placeholder="Placa" name="placa">
+          <input type="text" value="<%= details.chassi %>" placeholder="Chassi" name="chassi">
+          <input type="text" value="<%= details.renavam%>" placeholder="Renavam" name="renavam">
+          <input type="text" value="<%= details.modelo %>" placeholder="Modelo" name="modelo">
+          <input type="text" value="<%= details.marca %>" placeholder="Marca" name="marca">
+          <input type="text" value="<%= details.ano %>" placeholder="Ano" name="ano">
+          <br />
+        </div>
+        <div class="row col-xs-3 col-xs-offset-9">
+          
+          <button><a href="/show">Todos</a></button>
+          <button type="submit">Editar</button>
+        </div>
+      </form>
+  </div>
+  <% }) %>
+
+</body>
+</html>
